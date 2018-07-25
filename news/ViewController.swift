@@ -40,6 +40,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "SummaryTableViewCell") as! SummaryTableViewCell
         let article = articles[indexPath.row]
         print("Got article: ", article.id)
+        let url = URL(string: article.tease)
+        let data = try? Data(contentsOf: url!)
+        cell.teaserImageView.image = UIImage(data: data!)
         cell.headlineTextView.text = article.headline
         return cell
     }
