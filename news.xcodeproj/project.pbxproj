@@ -17,6 +17,7 @@
 		98CBD504210808EB00BC3343 /* JSONGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CBD503210808EB00BC3343 /* JSONGetter.swift */; };
 		98CBD5062108115900BC3343 /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CBD5052108115900BC3343 /* NewsArticle.swift */; };
 		9F15A14E210867F30002C917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F15A14D210867F30002C917 /* Assets.xcassets */; };
+		9FF77C8B2108E8AF00D9A8E2 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF77C8A2108E8AF00D9A8E2 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		98CBD503210808EB00BC3343 /* JSONGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONGetter.swift; sourceTree = "<group>"; };
 		98CBD5052108115900BC3343 /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
 		9F15A14D210867F30002C917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
+		9FF77C8A2108E8AF00D9A8E2 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		C839B609005A00206BA4F0C5 /* Pods-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news/Pods-news.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 			children = (
 				98CBD503210808EB00BC3343 /* JSONGetter.swift */,
 				98CBD5052108115900BC3343 /* NewsArticle.swift */,
+				9FF77C8A2108E8AF00D9A8E2 /* Video.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CBD504210808EB00BC3343 /* JSONGetter.swift in Sources */,
+				9FF77C8B2108E8AF00D9A8E2 /* Video.swift in Sources */,
 				98A49F602106E8BB004258E0 /* ViewController.swift in Sources */,
 				98A49F7E2106ED28004258E0 /* SummaryTableViewCell.swift in Sources */,
 				98CBD5062108115900BC3343 /* NewsArticle.swift in Sources */,
