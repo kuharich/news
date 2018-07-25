@@ -42,6 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print("Got article: ", article.id)
         let url = URL(string: article.tease)
         let data = try? Data(contentsOf: url!)
+        cell.teaserImageView.contentMode = .scaleAspectFit
         cell.teaserImageView.image = UIImage(data: data!)
         cell.headlineTextView.text = article.headline
         return cell
