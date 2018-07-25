@@ -42,6 +42,7 @@ class JSONGetter {
                         }
                     }
                 }
+                articles = articles.sorted(by: { $0.publishedDate > $1.publishedDate})
                 completion(articles, nil)
             }
         }).resume()
