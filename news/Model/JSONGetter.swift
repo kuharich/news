@@ -32,12 +32,12 @@ class JSONGetter {
                     if let id = article["id"] as? String, let items = article["items"] as? [[String: Any]] {
 
                         for item in items {
-                            if let headline = item["headline"] as? String, let summary = item["summary"] as? String, let datePublishedString = item["published"] as? String{
+                            if let headline = item["headline"] as? String, let datePublishedString = item["published"] as? String, let tease = item["tease"] as? String, let summary = item["summary"] as? String {
                                 let dateFormatter = DateFormatter()
                                 dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
                                 dateFormatter.locale = Locale(identifier: "en_US_POSIX")
                                 let date = dateFormatter.date(from: datePublishedString)!
-                                articles.append(NewsArticle(id: id, headline: headline, publishedDate: date, summary: summary))
+                                articles.append(NewsArticle(id: id, headline: headline, publishedDate: date, tease: tease, summary: summary))
                             }
                         }
                     }

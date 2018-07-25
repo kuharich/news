@@ -12,5 +12,6 @@ struct NewsArticle {
     var id: String
     var headline: String
     var publishedDate: Date
+    var tease: String
     var summary: String
 }
